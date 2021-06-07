@@ -1,0 +1,52 @@
+.insidecircle {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  height: 78%;
+  width: 78%;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0px 0px 0px 6px #d3d3d3, inset 0px 0px 0px 0px black;
+}
+
+.circle {
+  position: relative;
+  margin-left: 400px;
+  margin-top: 55px;
+  height: 76%;
+  width: 35%;
+  background-color: #eb4034;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0px 0px 0px 3px #d3d3d3;
+}
+
+.line1 {
+  position: absolute;
+  top: 60%;
+  left: 42%;
+  width: 50%;
+  height: 4px;
+  background-color: black;
+  transform: rotate(40deg);
+}
+
+.line2 {
+  position: absolute;
+  top: 69%;
+  left: 25%;
+  width: 50%;
+  height: 4px;
+  background-color: black;
+  transform: rotate(84deg);
+}
+
+.line3 {
+  position: absolute;
+  top: 64%;
+  left: 8%;
+  width: 50%;
+  height: 4px;
+  background-color: black;
+  transform: rotate(127deg);
+}
