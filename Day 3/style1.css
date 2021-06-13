@@ -1,0 +1,97 @@
+.flex-container {
+  display: flex;
+  justify-content: center;
+  /* align-items: space-between; */
+  width: 84%;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 50px;
+  border: 2px solid #34a4eb;
+  flex-wrap: wrap;
+}
+
+.right {
+  margin-top: 150px;
+  width: 55%;
+  height: 450px;
+}
+
+#left {
+  margin-top: 150px;
+  height: 100px;
+}
+
+#left1 {
+  position: relative;
+  top: -218px;
+}
+
+#left2 {
+  position: relative;
+  top: -100px;
+}
+
+#left3 {
+  height: 600px;
+}
+
+#right1 {
+  position: relative;
+  top: -1x;
+}
+
+span {
+  font-family: serif;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+/* .subtop {
+  margin-top: 20px;
+} */
+
+p {
+  font-size: larger;
+  font-family: serif;
+  font-weight: 800;
+}
+
+.grow {
+  height: 20%;
+}
+
+.top {
+  background-color: white;
+  width: 200px;
+  position: absolute;
+  top: -20px;
+  left: 42vw;
+  text-align: center;
+  z-index: 1;
+  font-size: 20px;
+}
+
+.flex-container > div {
+  width: 40%;
+  /* padding: 20px;
+  height: 250px; */
+}
+
+.size {
+  margin-top: -10px;
+}
+
+ul {
+  height: 100px;
+  padding: 4%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.line {
+  border-left: 3px solid #34a4eb;
+  height: 1300px;
+  position: absolute;
+  left: 49%;
+  top: 126px;
+}
