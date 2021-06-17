@@ -9,8 +9,8 @@ body {
 
 .container {
   border: 1px solid rgb(44, 43, 43);
-  height: 397px;
-  width: 396px;
+  height: 439px;
+  width: 440px;
   display: flex;
   flex-wrap: wrap;
   box-shadow: 7px 7px 5px rgb(54, 51, 51), -7px -7px 5px rgb(54, 51, 51);
@@ -24,6 +24,10 @@ body {
   margin: 0px;
   padding: 0px;
   cursor: pointer;
+}
+
+.box:hover {
+  opacity: 0.8;
 }
 
 .white {
