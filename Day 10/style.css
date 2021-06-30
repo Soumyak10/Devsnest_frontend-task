@@ -1,0 +1,93 @@
+body {
+  height: 100vh;
+  margin: 0px;
+  background: url(./images/bg-2.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  perspective: 1000px;
+  position: relative;
+}
+
+#score {
+  color: aliceblue;
+  position: absolute;
+  top: 33px;
+  left: 175px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-style: italic;
+  font-size: xx-large;
+}
+
+.board {
+  height: 87%;
+  width: 77%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 84px;
+}
+
+.card {
+  height: 191px;
+  width: 142px;
+  margin: 4px;
+  cursor: pointer;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.back {
+  position: absolute;
+  left: 0%;
+  transform: rotateY(180deg);
+}
+
+img {
+  height: 186px;
+  width: 130px;
+  margin: 4px;
+}
+
+.card.flip {
+  transform: rotateY(180deg);
+}
+
+.matched {
+  visibility: hidden;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.popup {
+  margin: 80px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+  width: 50%;
+  position: relative;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.show {
+  visibility: visible !important;
+  opacity: 100 !important;
+}
