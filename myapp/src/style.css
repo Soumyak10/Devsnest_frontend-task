@@ -44,6 +44,7 @@ body {
   width: 36.5px;
   padding: 0px;
   margin: 0px;
+  display: flex;
 }
 
 .rowodd:nth-child(odd) .box:nth-child(odd) {
@@ -66,16 +67,17 @@ body {
 .calorie h2 {
   margin: 22px;
   margin-left: 6px;
+  margin-bottom: 2px;
   font-size: 28px;
 }
 
 .calorie h3 {
-  margin: 37px;
+  margin: 0px;
   margin-left: 6px;
   font-size: 23px;
 }
 
-.calorimeter {
+.calorie-card {
   height: 68vh;
   width: 37vw;
   padding: 15px;
@@ -86,4 +88,18 @@ body {
 .container h1 {
   text-align: center;
   margin: 24px;
+}
+
+button {
+  height: 50px;
+  width: 50px;
+  font-size: 36px;
+}
+
+.calorie button {
+  width: 108px;
+  height: 40px;
+  margin-left: 18px;
+  margin-top: 4px;
+  background-color: lightsteelblue;
 }

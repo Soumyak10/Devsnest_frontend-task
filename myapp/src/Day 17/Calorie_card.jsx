@@ -1,10 +1,10 @@
 import Calorie from "./Calorie";
 
-const Calorimeter = (props) => {
+const Calorie_card = (props) => {
   return (
     <div className="container">
       <h1> Calorie Read Only</h1>
-      <div className="calorimeter">
+      <div className="calorie-card">
         <Calorie food="Pizza" cal="you have consumed 56 cals today" />
         <Calorie food="Burger" cal="you have consumed 69 cals today" />
         <Calorie food="Coke" cal="you have consumed 500 cals today" />
@@ -17,4 +17,4 @@ const Calorimeter = (props) => {
   );
 };
 
-export default Calorimeter;
+export default Calorie_card;
