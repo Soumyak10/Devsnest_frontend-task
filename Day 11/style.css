@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
+}
+
+.front {
+  width: 60%;
+  height: 16%;
+  font-size: 60px;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  flex-direction: column;
+  margin: 149px;
+  border-radius: 20px;
+  font-family: "Akaya Kanadaka", cursive;
+  border: 8px solid black;
+  padding: 8px;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.quiz-container {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: -264px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 62px rgb(0, 0, 0, 0.1);
+  visibility: visible;
+}
+
+.question {
+  margin: 20px;
+  font-size: 28px;
+  text-align: center;
+  font-family: "Aclonica", cursive;
+}
+
+.options {
+  min-width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  height: 105px;
+  width: 242px;
+  border-radius: 47%;
+  margin: 20px;
+  font-size: 20px;
+  box-shadow: 4px 4px 62px rgb(0, 0, 0, 0.1);
+  opacity: 0.6;
+  transition: 0.5s ease;
+  font-family: "Lobster", cursive;
+  background: #a3c2c2;
+}
+
+button:hover {
+  opacity: 1;
+  box-shadow: 4px 4px 62px rgb(0, 0, 0, 0.1);
+}
+
+.correct {
+  background: #0099ff;
+}
+
+.wrong {
+  background: #ff3333;
+}
+
+.next {
+  height: 50px;
+  width: 100px;
+  position: fixed;
+  top: 72%;
+  left: 43%;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#popup {
+  padding: 40px;
+  border-radius: 5px;
+  background: black;
+  height: 231px;
+  width: 312px;
+  text-align: center;
+  color: white;
+  position: absolute;
+  left: 31%;
+  top: 16%;
+}
+
+.popup h3 {
+  margin-top: 0;
+  color: whitesmoke;
+  font-family: "Otomanopee One", sans-serif;
+}
+
+h1 {
+  margin-top: 0px;
+  margin-bottom: 24px;
+  font-family: "Otomanopee One", sans-serif;
+}
+
+.show {
+  visibility: visible !important;
+  opacity: 100 !important;
+}
+
+.new {
+  height: 34px;
+  width: 37%;
+  margin: 20px;
+  border-right: none;
+  border-left: none;
+  border-radius: 16%;
+  font-family: "Lobster", cursive;
+  font-family: "Otomanopee One", sans-serif;
+}
+
+.thank {
+  font-family: "Akaya Kanadaka", cursive;
+  font-size: 50px;
+  position: absolute;
+  top: 39%;
+}
