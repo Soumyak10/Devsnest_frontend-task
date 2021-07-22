@@ -137,8 +137,10 @@ function nxt() {
 
       playagain.addEventListener("click", () => {
         qno = 0;
+        score = 0;
         createque();
         scard.classList.remove("show");
+        body.appendChild(next);
       });
 
       exit.addEventListener("click", () => {
