@@ -9,6 +9,7 @@ import Calorie_card1 from "./Day 18/Calorie_card1";
 import Calorie_card2 from "./Day 20/Calorie-card2";
 import Calorie_Tracker from "./Day 21/Calorie_Tracker";
 import Meme_gen from "./Day 22/Meme_gen";
+import Customhooks from "./Day 23/Customhooks";
 // import "./style.css";
 
 // ReactDom.render(<Card />, document.getElementById("root"));
@@ -18,5 +19,6 @@ import Meme_gen from "./Day 22/Meme_gen";
 // ReactDom.render(<App />, document.getElementById("root"));
 // ReactDom.render(<Calorie_card1 />, document.getElementById("root"));
 // ReactDom.render(<Calorie_card2 />, document.getElementById("root"));
-ReactDom.render(<Calorie_Tracker />, document.getElementById("root"));
+// ReactDom.render(<Calorie_Tracker />, document.getElementById("root"));
 // ReactDom.render(<Meme_gen />, document.getElementById("root"));
+ReactDom.render(<Customhooks />, document.getElementById("root"));
