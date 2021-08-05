@@ -2,7 +2,7 @@ import Calorie from "./Calorie";
 
 const Calorie_card = (props) => {
   return (
-    <div className="container">
+    <div className="container-20">
       <h1> Calorie Read Only</h1>
       <div className="calorie-card">
         <Calorie food="Pizza" cal="you have consumed 56 cals today" />
