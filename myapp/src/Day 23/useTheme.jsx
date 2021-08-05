@@ -1,7 +1,8 @@
+import { useTheme } from "@material-ui/core";
 import { useEffect, useState } from "react";
 import "./dark.css";
 
-export default () => {
+const UseTheme = () => {
   const [mode, setMode] = useState("light");
   const [theme, setTheme] = useState("Light mode");
 
@@ -26,3 +27,5 @@ export default () => {
 
   return [mode, handleMode, theme];
 };
+
+export default UseTheme;

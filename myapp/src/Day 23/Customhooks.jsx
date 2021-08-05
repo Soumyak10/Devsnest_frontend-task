@@ -1,9 +1,8 @@
-import useTheme from "./useTheme";
+import UseTheme from "./UseTheme";
 import "./dark.css";
-import { useState } from "react";
 
 const Customhooks = () => {
-  const [mode, handleMode, theme] = useTheme();
+  const [mode, handleMode, theme] = UseTheme();
 
   return (
     <div
