@@ -1,0 +1,32 @@
+.container-27 {
+  text-align: center;
+  background: #0f044c;
+  height: 100vh;
+}
+
+.container-27 h2 {
+  margin-bottom: 40px;
+  background: #3c5186;
+  color: whitesmoke;
+  position: relative;
+  top: 10px;
+}
+
+.container-27 input {
+  width: 40%;
+  background: #eeeeee;
+}
+
+.todo-list {
+  width: 40%;
+  margin-top: 13px;
+  margin-left: -6%;
+  font-size: 25px;
+  text-align: left;
+  background: #787a91;
+  box-shadow: -2px 4px 5px 0px #787a91;
+}
+
+.toggle {
+  text-decoration: line-through;
+}
