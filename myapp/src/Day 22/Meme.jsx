@@ -7,6 +7,7 @@ const Meme = ({ meme, setMeme }) => {
     password: "9425573565",
     boxes: [],
   });
+
   const generate_meme = () => {
     let url = ` https://api.imgflip.com/caption_image?template_id=${form.template_id}&username=${form.username}&password=${form.password}`;
     form.boxes.map((box, index) => {
@@ -14,15 +15,9 @@ const Meme = ({ meme, setMeme }) => {
     });
     fetch(url)
       .then((res) => res.json())
-      .then((data) =>
-        //   {data.data.sucess ?
-        {
-          setMeme({ ...meme, url: data.data.url });
-        }
-      );
-    //    :
-    //   (<p> no  data</p>)
-    // }
+      .then((data) => {
+        setMeme({ ...meme, url: data.data.url });
+      });
   };
   return (
     <div className="meme">
