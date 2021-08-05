@@ -1,27 +1,56 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
 
-body {
+.nav_container {
   display: flex;
-  height: 100vh;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  margin: 15px;
+  font-size: x-large;
+  padding: 0px;
+  width: 44%;
+  flex-wrap: wrap;
+  border: 3px solid black;
+  margin-left: 30%;
 }
 
-.card {
+#heading {
+  text-align: center;
+}
+
+.nav_container a {
+  text-decoration: none;
+  padding: 10px;
+  border: 2px solid black;
+  margin: 15px;
+  height: 64px;
+  font-size: x-large;
+}
+
+.image-16 {
+  height: 89%;
+  width: 98%;
+}
+
+.card-1 {
   height: 52vh;
   width: 50vh;
   padding: 7px 7px;
   display: inline-block;
-  margin: auto;
   border-radius: 3%;
   box-shadow: 0px 5px 9px black, -3px -3px 9px white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8%;
+  margin-left: 37%;
 }
 
-.card img {
+.card-1 img {
   width: 100%;
   border-radius: 3%;
 }
@@ -37,6 +66,8 @@ body {
   padding: 0px;
   margin: 0px;
   display: flex;
+  margin-top: 8%;
+  margin-left: 37%;
 }
 
 .box {
@@ -77,6 +108,14 @@ body {
   font-size: 23px;
 }
 
+.container-20 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
 .calorie-card {
   height: 68vh;
   width: 37vw;
@@ -90,16 +129,17 @@ body {
   margin: 24px;
 }
 
-button {
+/* button {
   height: 50px;
   width: 50px;
   font-size: 36px;
-}
+} */
 
 .calorie button {
-  width: 108px;
-  height: 40px;
+  width: 123px;
+  height: 60px;
   margin-left: 18px;
   margin-top: 4px;
   background-color: lightsteelblue;
+  font-size: 35px;
 }
