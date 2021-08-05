@@ -7,8 +7,10 @@
   background: darkcyan;
 }
 
-a {
+.nav_ele a {
   margin: 136px;
+  color: indigo;
+  text-decoration: none;
 }
 
 .container-24 {
