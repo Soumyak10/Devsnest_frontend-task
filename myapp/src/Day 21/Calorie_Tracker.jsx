@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./Styles.css";
 import { Button, TextField } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
+
 const useStyles = makeStyles({
   button: {
     margin: "20px",
@@ -28,10 +29,10 @@ const Calorie_Tracker = () => {
     setItem(item.filter((items, i) => i !== index));
   };
   return (
-    <div className="container">
+    <div className="container-21">
       <Addfooditem additem={additem} />
       <div className="items-container">
-        {item.length == 0 ? (
+        {item.length === 0 ? (
           <h3>Start adding items</h3>
         ) : (
           item.map((items, index) => (
@@ -63,7 +64,7 @@ function Addfooditem({ additem }) {
   return (
     <form onSubmit={handleClick}>
       <h2>Calorie Tracker</h2>
-      <div className="box">
+      <div className="box-21">
         <TextField
           required
           label="Item Name"
@@ -91,7 +92,7 @@ function RenderItem({ updateItem, removeItem, items, index }) {
   const [isediting, setIsEditing] = useState(false);
 
   return (
-    <div className="card">
+    <div className="cal-card">
       {isediting ? (
         <TextField
           required
