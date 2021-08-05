@@ -29,6 +29,7 @@ const Addtodo = () => {
             height: "35px",
             width: "69px",
             margin: "10px",
+            cursor: "pointer",
           }}
           onClick={() => {
             dispatch(addToDo({ title: item, done: false }));

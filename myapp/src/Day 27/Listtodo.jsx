@@ -9,13 +9,17 @@ const ListTodo = () => {
     <div>
       {todos.map((todo, index) => (
         <div key={index}>
-          <div style={{ display: "inline-block" }} className="todo-list">
+          <div
+            style={{ display: "inline-block" }}
+            className={`todo-list ${todo.done ? "done" : ""}`}
+          >
             {todo.title}
             <FaTrash
               style={{
                 fontSize: " 36px",
                 float: "right",
                 background: "red",
+                cursor: "pointer",
               }}
               onClick={() => {
                 dispatch(deleteToDo(index));
@@ -27,8 +31,9 @@ const ListTodo = () => {
                 marginRight: "10px",
                 float: "right",
                 background: "green",
+                cursor: "pointer",
               }}
-              onClick={() => dispatch(toggleToDo())}
+              onClick={() => dispatch(toggleToDo(index))}
             />
           </div>
         </div>
