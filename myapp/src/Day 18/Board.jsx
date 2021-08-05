@@ -4,7 +4,7 @@ const Square = (props) => {
 
 const Board = () => {
   return (
-    <div style={{ width: "340px" }} className="card2">
+    <div className="card2" style={{ width: "340px", flexWrap: "wrap" }}>
       {[...Array(8).keys()].map((i) => {
         return [...Array(8).keys()].map((j) => {
           // console.log(i, j);
