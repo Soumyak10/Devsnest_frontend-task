@@ -26,10 +26,10 @@ const deleteToDo = (id) => {
   };
 };
 
-const toggleToDo = (val) => {
+const toggleToDo = (id) => {
   return {
     type: "toggle-todo",
-    payload: val,
+    payload: id,
   };
 };
 
