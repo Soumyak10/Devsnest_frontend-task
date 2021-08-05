@@ -1,4 +1,3 @@
-import "../Day 27/style.css";
 const initialState = [];
 
 const todoReducer = (state = initialState, action) => {
@@ -7,7 +6,9 @@ const todoReducer = (state = initialState, action) => {
   } else if (action.type === "delete-todo") {
     return state.filter((item, i) => i !== action.payload);
   } else if (action.type === "toggle-todo") {
-    return state.filter((item, i) => i === action.payload);
+    const newState = [...state];
+    newState[action.payload].done = !state[action.payload].done;
+    return newState;
   } else {
     return state;
   }
