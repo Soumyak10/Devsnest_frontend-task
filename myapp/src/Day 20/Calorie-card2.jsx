@@ -1,5 +1,5 @@
 import Calorie2 from "./Calorie2";
-import { useEffect, usefood, useState } from "react";
+import { useState } from "react";
 
 const Calorie_card2 = () => {
   var mylist = [
@@ -42,7 +42,7 @@ const Calorie_card2 = () => {
 
   const [foods, setFoods] = useState(mylist);
   return (
-    <div className="container">
+    <div className="container-20">
       <h1> Calorie Read Only</h1>
       <div className="calorie-card">
         {foods.length > 0 ? (
