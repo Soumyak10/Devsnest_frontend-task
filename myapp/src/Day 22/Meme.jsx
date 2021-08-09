@@ -21,7 +21,7 @@ const Meme = ({ meme, setMeme }) => {
   };
   return (
     <div className="meme">
-      <img src={meme.url} alt="meme"></img>
+      <img src={meme.url} alt="meme" className="meme_image"></img>
       <div>
         {[...Array(meme.box_count)].map((_, index) => (
           <input
