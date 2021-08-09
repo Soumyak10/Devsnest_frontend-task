@@ -14,6 +14,8 @@ import MyBootstrap from "./Day 25/MyBootstrap";
 import { NavLink } from "react-router-dom";
 import Form from "./Day 26/Form";
 import Addtodo from "./Day 27/Addtodo";
+import WeatherApi from "./Day 28/WeatherApi";
+import WeatherForm from "./Day 29/WeatherForm";
 import "./style.css";
 
 const Ele = () => {
@@ -35,6 +37,8 @@ const Ele = () => {
         <NavLink to="/Mybootstrap">Day-25</NavLink>
         <NavLink to="/Form">Day-26</NavLink>
         <NavLink to="/Addtodo">Day-27</NavLink>
+        <NavLink to="/WeatherApi">Day-28</NavLink>
+        <NavLink to="/WeatherForm">Day-29</NavLink>
       </div>
     </>
   );
@@ -59,6 +63,8 @@ const Main_index = () => {
           <Route path="/Mybootstrap" component={MyBootstrap} />
           <Route path="/Form" component={Form} />
           <Route path="/Addtodo" component={Addtodo} />
+          <Route path="/WeatherApi" component={WeatherApi} />
+          <Route path="/WeatherForm" component={WeatherForm} />
           <Route exact path="/" component={Ele} />
         </Switch>
       </Router>
