@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.place-btn {
+  position: fixed;
+  top: 10px;
+  right: 25px;
+}
+
+.light {
+  background: white;
+}
+
+.dark {
+  background: black;
+}
+
+.todos {
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+
+.todos .dark {
+  background: black;
+  color: whitesmoke;
+  height: 100vh;
+  width: 100%;
+  border: 2px solid white;
+}
+
+.todos .light {
+  background: whitesmoke;
+  color: black;
+  height: 100vh;
+  width: 100%;
+  border: 2px solid black;
+}
+
+.todos_btn {
+  padding: 9px;
+  margin: 40px;
+}
+
+.todos-items_dark {
+  font-size: xx-large;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: 2px solid black;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 10px;
+}
+
+.todos-items_light {
+  font-size: xx-large;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: 2px solid white;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 10px;
+}
