@@ -11,11 +11,12 @@ import Meme_gen from "./Day 22/Meme_gen";
 import Customhooks from "./Day 23/Customhooks";
 import Navbar from "./Day 24/Navbar";
 import MyBootstrap from "./Day 25/MyBootstrap";
-import { NavLink } from "react-router-dom";
 import Form from "./Day 26/Form";
 import Addtodo from "./Day 27/Addtodo";
 import WeatherApi from "./Day 28/WeatherApi";
 import WeatherForm from "./Day 29/WeatherForm";
+import TodoList from "./Day 33/TodoList";
+import { NavLink } from "react-router-dom";
 import "./style.css";
 
 const Ele = () => {
@@ -39,6 +40,7 @@ const Ele = () => {
         <NavLink to="/Addtodo">Day-27</NavLink>
         <NavLink to="/WeatherApi">Day-28</NavLink>
         <NavLink to="/WeatherForm">Day-29</NavLink>
+        <NavLink to="/TodoList">Day-33</NavLink>
       </div>
     </>
   );
@@ -65,6 +67,7 @@ const Main_index = () => {
           <Route path="/Addtodo" component={Addtodo} />
           <Route path="/WeatherApi" component={WeatherApi} />
           <Route path="/WeatherForm" component={WeatherForm} />
+          <Route path="/TodoList" component={TodoList} />
           <Route exact path="/" component={Ele} />
         </Switch>
       </Router>
