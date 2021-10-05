@@ -15,7 +15,7 @@ const Todos = () => {
   const [input, setInput] = useState<string>("");
 
   const handleDelete = (id: number) => {
-    const newTodos = todos.filter((todo) => todo !== todos[id]);
+    const newTodos = todos.filter((todo) => todo.index !== id);
     setTodos(newTodos);
   };
 
