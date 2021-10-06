@@ -10,12 +10,14 @@ interface deleteNoteAction {
 
 type ActionType = addNoteAction | deleteNoteAction;
 
-const noteReducer = (state = [], action: ActionType) => {
+const noteReducer = (state: any = [], action: ActionType) => {
   switch (action.type) {
     case "Add_Note":
       return [...state, action.payload];
     case "Delete_Note":
-      return state.filter((note, index) => index != action.payload);
+      return state.filter(
+        (_: string, index: number) => index != action.payload
+      );
     default:
       return state;
   }
