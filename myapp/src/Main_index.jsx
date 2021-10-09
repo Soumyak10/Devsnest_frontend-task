@@ -18,9 +18,11 @@ import WeatherForm from "./Day 29/WeatherForm";
 import TodoList from "./Day 33/TodoList";
 import CounterReduce from "./Day 34/CounterReduce";
 import Notes from "./Day 34/Notes";
+import Ig from "./Day 35/Ig";
 import { NavLink } from "react-router-dom";
 import { Provider } from "react-redux";
 import storeTs from "./Day 34/storeTs";
+import store from "./Day 35/store";
 import "./style.css";
 
 const Ele = () => {
@@ -47,6 +49,7 @@ const Ele = () => {
         <NavLink to="/TodoList">Day-33</NavLink>
         <NavLink to="/CounterReduce">Day 34(A)</NavLink>
         <NavLink to="/Notes">Day 34(B)</NavLink>
+        <NavLink to="/Ig">Day 35</NavLink>
       </div>
     </>
   );
@@ -82,6 +85,11 @@ const Main_index = () => {
           <Route path="/Notes">
             <Provider store={storeTs}>
               <Notes />
+            </Provider>
+          </Route>
+          <Route path="/Ig">
+            <Provider store={store}>
+              <Ig />
             </Provider>
           </Route>
           <Route exact path="/" component={Ele} />
